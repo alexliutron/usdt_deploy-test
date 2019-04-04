@@ -16,7 +16,10 @@
 
 ##### 1.3 需要修改的文件(具体修改根据需求进行修改即可)
 ######  a.tronbox.js (选择需要部署的网络及添加合约部署账户的私钥)
-######  a.migrations/2_deploy_contracts.js (token名称及精度等)
+######  b.migrations/2_deploy_contracts.js (token名称及精度等)
+######  c.修改contracts/ERC20Basic.sol中
+######        uint256 public totalSupply; 修改为 function totalSupply() public constant returns (uint);
+
 
 
 ##### 1.4 合约部署
